@@ -2,7 +2,7 @@
 
 require_once 'funcao_curl.php';
 
-// Função para exibir mensagem de erro apropriada
+
 function exibirErro($resultado) {
     if (isset($resultado['httpCode']) && $resultado['httpCode'] == 429) {
         echo "<div style='background-color:#fff3cd; border:2px solid #ffc107; padding:15px; margin:10px 0; border-radius:5px;'>";
@@ -70,4 +70,5 @@ if (!$marcaId) {
         echo "<a href='index.php'>Fazer Nova Consulta</a>";
     }
 }
+
 ?>
